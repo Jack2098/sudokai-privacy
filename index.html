@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Política de Privacidad - Sudokai</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - Sudokai</title>
 
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       max-width: 900px;
-      margin: auto;
+      margin: 0 auto;
       padding: 24px;
       line-height: 1.7;
-      color: #222;
       background-color: #f4f6f8;
+      color: #222;
     }
 
     .container {
-      background: #ffffff;
+      background: white;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -26,38 +25,55 @@
 
     h1 {
       text-align: center;
-      margin-bottom: 10px;
     }
 
     h2 {
-      margin-top: 30px;
-      color: #333;
+      margin-top: 25px;
     }
 
-    p {
-      margin: 10px 0;
+    .lang-toggle {
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    ul {
-      margin-left: 20px;
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #1a73e8;
+      color: white;
+      font-weight: bold;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .hidden {
+      display: none;
     }
 
     a {
       color: #1a73e8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     .footer {
-      margin-top: 40px;
-      font-size: 14px;
       text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
       color: #777;
     }
   </style>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById("es").classList.add("hidden");
+      document.getElementById("en").classList.add("hidden");
+      document.getElementById(lang).classList.remove("hidden");
+    }
+  </script>
 
 </head>
 
@@ -65,80 +81,92 @@
 
 <div class="container">
 
-<h1>Política de Privacidad</h1>
+  <div class="lang-toggle">
+    <button onclick="showLang('es')">Español</button>
+    <button onclick="showLang('en')">English</button>
+  </div>
 
-<p><strong>Sudokai – Sudoku Puzzle Game</strong><br>
-Desarrollado por <strong>ZmoCore Labs</strong></p>
+  <!-- ESPAÑOL -->
+  <div id="es">
 
-<p><strong>Última actualización:</strong> Abril 2026</p>
+    <h1>Política de Privacidad</h1>
 
-<h2>1. Información que recopilamos</h2>
-<p>
-Esta aplicación no recopila información personal identificable directamente. Sin embargo, puede recopilar información automáticamente a través de servicios de terceros.
-</p>
+    <p><strong>Sudokai – Sudoku Puzzle Game</strong><br>
+    Desarrollado por <strong>ZmoCore Labs</strong></p>
 
-<h2>2. Servicios de terceros</h2>
-<p>
-La aplicación utiliza servicios de terceros que pueden recopilar información para identificarte.
-</p>
+    <p><strong>Última actualización:</strong> Abril 2026</p>
 
-<p><strong>Google AdMob (Publicidad)</strong></p>
-<ul>
-  <li>Identificadores de dispositivo</li>
-  <li>Dirección IP</li>
-  <li>Datos de uso de la aplicación</li>
-</ul>
+    <h2>1. Información que recopilamos</h2>
+    <p>No recopilamos datos personales directamente. Sin embargo, servicios de terceros pueden hacerlo.</p>
 
-<p>
-Para más información, puedes visitar:
-<br>
-<a href="https://policies.google.com/privacy">
-https://policies.google.com/privacy
-</a>
-</p>
+    <h2>2. Servicios de terceros</h2>
+    <p>Usamos Google AdMob para publicidad.</p>
+    <ul>
+      <li>Identificadores de dispositivo</li>
+      <li>Dirección IP</li>
+      <li>Datos de uso</li>
+    </ul>
 
-<h2>3. Uso de la información</h2>
-<ul>
-  <li>Mostrar anuncios relevantes</li>
-  <li>Mejorar la experiencia del usuario</li>
-  <li>Analizar el rendimiento de la aplicación</li>
-</ul>
+    <p>
+      Más información:<br>
+      <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+    </p>
 
-<h2>4. Cookies y tecnologías similares</h2>
-<p>
-Los servicios de terceros pueden utilizar cookies y tecnologías similares para recopilar información.
-</p>
+    <h2>3. Uso de la información</h2>
+    <ul>
+      <li>Mostrar anuncios</li>
+      <li>Mejorar la app</li>
+      <li>Analizar rendimiento</li>
+    </ul>
 
-<h2>5. Seguridad</h2>
-<p>
-Valoramos tu confianza y nos esforzamos por proteger tu información. Sin embargo, ningún método de transmisión por Internet es completamente seguro.
-</p>
+    <h2>4. Privacidad de menores</h2>
+    <p>No está dirigida a menores de 13 años.</p>
 
-<h2>6. Privacidad de los niños</h2>
-<p>
-Esta aplicación no está dirigida a menores de 13 años y no recopilamos conscientemente información personal de niños.
-</p>
+    <h2>5. Contacto</h2>
+    <p>Email: tu-email@ejemplo.com</p>
 
-<h2>7. Enlaces a otros sitios</h2>
-<p>
-La aplicación puede contener enlaces a sitios externos. No somos responsables de sus políticas de privacidad.
-</p>
+  </div>
 
-<h2>8. Cambios en esta política</h2>
-<p>
-Podemos actualizar esta Política de Privacidad ocasionalmente. Se recomienda revisarla periódicamente.
-</p>
+  <!-- ENGLISH -->
+  <div id="en" class="hidden">
 
-<h2>9. Contacto</h2>
-<p>
-Si tienes preguntas sobre esta Política de Privacidad, puedes contactarnos en:
-</p>
+    <h1>Privacy Policy</h1>
 
-<p><strong>Email:</strong> zmocorelabs@gmail.com</p>
+    <p><strong>Sudokai – Sudoku Puzzle Game</strong><br>
+    Developed by <strong>ZmoCore Labs</strong></p>
 
-<p>
-Al utilizar esta aplicación, aceptas esta Política de Privacidad.
-</p>
+    <p><strong>Last updated:</strong> April 2026</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We do not collect personal data directly. However, third-party services may collect information.</p>
+
+    <h2>2. Third-Party Services</h2>
+    <p>We use Google AdMob for advertising.</p>
+    <ul>
+      <li>Device identifiers</li>
+      <li>IP address</li>
+      <li>Usage data</li>
+    </ul>
+
+    <p>
+      More info:<br>
+      <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+    </p>
+
+    <h2>3. Use of Information</h2>
+    <ul>
+      <li>Show ads</li>
+      <li>Improve app</li>
+      <li>Analyze performance</li>
+    </ul>
+
+    <h2>4. Children's Privacy</h2>
+    <p>Not intended for children under 13.</p>
+
+    <h2>5. Contact</h2>
+    <p>Email: your-email@example.com</p>
+
+  </div>
 
 </div>
 
